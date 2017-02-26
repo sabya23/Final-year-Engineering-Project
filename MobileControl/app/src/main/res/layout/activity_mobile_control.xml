@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MobileControl">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:id="@+id/txtdisplay"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name: "
+        android:id="@+id/txtUser"
+        android:layout_below="@+id/txtdisplay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password: "
+        android:id="@+id/txtPassword"
+        android:layout_below="@+id/txtUser"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_alignBottom="@+id/txtUser"
+        android:layout_toRightOf="@+id/txtUser"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_alignBottom="@+id/txtPassword"
+        android:layout_alignRight="@+id/username"
+        android:layout_alignEnd="@+id/username"
+        android:layout_toRightOf="@+id/txtUser"
+        android:layout_toEndOf="@+id/txtUser"
+        android:password="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/buttonLogin"
+        android:layout_below="@+id/txtPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/buttonCancel"
+        android:layout_alignBottom="@+id/buttonLogin"
+        android:layout_toRightOf="@+id/buttonLogin"
+        android:layout_toEndOf="@+id/buttonLogin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New User Registration"
+        android:id="@+id/txtRegistration"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:clickable="true" />
+
+</RelativeLayout>
